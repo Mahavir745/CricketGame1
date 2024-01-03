@@ -1,0 +1,22 @@
+#container-calculator{
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 200px;
+    height: 85%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#display{
+ width: 85%;
+ margin: 10px;
+ font-size: 40px;
+}
+.value{
+    width: 50px;
+    margin: 4px;
+    height: 50px;
+    font-weight:900;
+ 
+}

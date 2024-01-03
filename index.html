@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Game</title>
+  <link rel="stylesheet" href="css/cricket.css">
+</head>
+<body>
+  <header>]</header>
+
+  <main>
+  <h1>Bat Ball And Stump</h1>
+  <button onclick="
+  let computerChoice=computerGame();
+  let result;
+  if(computerChoice ==='Bat'){
+    result='Its tie.';
+  }
+  else if(computerChoice ==='Ball'){
+    result='You win!';
+  }
+  else{
+    result='Computer Win';
+  }
+  document.querySelector('#valueDisplay').value=(`Your Choice:Bat  \n Computer Choice: ${computerChoice} \n Game Result: ${result}`);
+  ">
+  <img src="images/batsman.png" alt="batsman" id="batsman"></button>
+
+<button onclick="
+ computerChoice=computerGame();
+if(computerChoice ==='Bat'){
+  result='Computer win!';
+}
+else if(computerChoice ==='Ball'){
+  result=' Its tie';
+}
+else{
+  result='You Win';
+}
+document.querySelector('#valueDisplay').value=(`Your Choice: Ball  \n Computer Choice: ${computerChoice} \n Game Result: ${result}`);
+"><img src="images/ball.png" alt="ball" id="ball"></button>
+
+<button onclick="
+ computerChoice=computerGame();
+if(computerChoice ==='Bat'){
+  result='You win!';
+}
+else if(computerChoice ==='Ball'){
+  result=' Computer Win';
+}
+else{
+  result='Its tie.';
+}
+document.querySelector('#valueDisplay').value=(`Your Choice: Stump  Computer Choice: ${computerChoice} \n Game Result: ${result}`);
+"><img src="images/stump.jpg" alt="stump" id="stump"></button>
+<br>
+<h1>Game Result:</h1>
+
+<textarea  id="valueDisplay" readonly cols="30" rows="5"></textarea>
+
+</main>
+
+<footer>
+
+</footer>
+
+  <script>
+    //  let computerChoice;
+    function computerGame(){
+      let Choice;
+      let randomNumber = Math.random()*3;
+      if(randomNumber>0 && randomNumber<=1){
+         return 'Bat';
+      }
+      else if(randomNumber>1 && randomNumber<=2) {
+         return 'Ball';
+      }
+      else{
+         return 'Stump';
+      }
+    }
+    
+  </script>
+</html>

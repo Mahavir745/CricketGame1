@@ -1,0 +1,53 @@
+*{
+  text-align: center;
+  background-color:white;
+  background-color: black;
+  max-width: 900px;
+  margin: auto;
+  width: auto;
+  
+}
+body main{
+  background-color: white;
+  box-shadow:inset 4px 6px 77px gray ,inset -4px 6px 7px gray;
+  border-radius: 20px;
+}
+h1{
+  background-image: linear-gradient(150deg, blue,red,blue, red);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 60px;
+}
+button{
+  border: none;
+  padding: 10px;
+  margin: 40px;
+  border-radius: 50%;
+  box-shadow:inset 7px -8px 9px rgb(205, 194, 196), inset 7px 8px 9px gray;
+  cursor: pointer;
+}
+img{
+  width: 180px;
+  height: 180px; 
+ border-radius: 50%;
+
+}
+img:hover{
+  width: 100px;
+  height: 100px;
+}
+#valueDisplay{
+  text-transform: capitalize;
+  font-size: 40px;
+  border: none;
+  box-shadow:inset -7px 8px 9px violet ,inset 7px -8px 9px rgb(130, 238, 184) ;
+  bottom: 20px;
+  border-radius: 10px;
+  padding-top: 50px;
+  background-image: linear-gradient(150deg, blue,red,blue, red);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 800;
+}
